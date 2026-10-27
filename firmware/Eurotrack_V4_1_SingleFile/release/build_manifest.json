@@ -1,0 +1,20 @@
+{
+  "version": "4.1",
+  "distribution": "single_file",
+  "date": "2026-10-20",
+  "fqbn": "arduino:avr:nano:cpu=atmega328",
+  "flash_bytes": 20066,
+  "static_ram_bytes": 594,
+  "oled_heap_bytes_excluding_allocator": 1024,
+  "settings_schema": 2,
+  "avr_compile": "pass",
+  "host_asan_ubsan_regressions": "pass",
+  "application_hex_identical_to_v41": true,
+  "embedded_header_sha256": "28fc7fa583a839f753c2ee971439880f949c537a27ca9ca47931f6d7ef7fb9fd",
+  "hardware_tested": false,
+  "uploaded": false,
+  "files_sha256": {
+    "Eurotrack_V4_1_SingleFile.ino": "b977d83cf8efdaf191a64f7330362802caaae7e5706df603a0ea81b7fd3fe7db",
+    "release/Eurotrack_V4_1_SingleFile.ino.hex": "7a8b63d6d970dee4425611e2e94aa37fc66ac12207166c1189477cb918b387bc"
+  }
+}

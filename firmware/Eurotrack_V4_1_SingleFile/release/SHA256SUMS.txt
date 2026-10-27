@@ -1,0 +1,2 @@
+b977d83cf8efdaf191a64f7330362802caaae7e5706df603a0ea81b7fd3fe7db  Eurotrack_V4_1_SingleFile.ino
+7a8b63d6d970dee4425611e2e94aa37fc66ac12207166c1189477cb918b387bc  release/Eurotrack_V4_1_SingleFile.ino.hex
