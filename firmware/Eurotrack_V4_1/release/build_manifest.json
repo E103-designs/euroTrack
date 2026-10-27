@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-20",
+  "version": "4.1",
+  "status": "engineering_candidate_not_hardware_qualified",
+  "fqbn": "arduino:avr:nano:cpu=atmega328",
+  "clock_ppqn": 4,
+  "tools": {
+    "arduino_cli": "1.5.1",
+    "avr_core": "1.8.6",
+    "avr_gcc": "7.3.0-atmel3.6.1-arduino7"
+  },
+  "libraries": {
+    "Adafruit SSD1306": "2.5.17",
+    "Adafruit GFX": "1.12.6",
+    "Adafruit BusIO": "1.17.4"
+  },
+  "original": {
+    "filename": "Eurotrack_V3_9_Optimized.ino",
+    "sha256": "1a63431897f031a946ba476805d0440ffc82d2abfb8ffa6f8d586f4ccec51a4c",
+    "flash_bytes": 21476,
+    "static_ram_bytes": 725
+  },
+  "previous_v40": {
+    "flash_bytes": 19566,
+    "static_ram_bytes": 586,
+    "preserved": true
+  },
+  "candidate": {
+    "flash_bytes": 20066,
+    "static_ram_bytes": 594,
+    "oled_heap_bytes_excluding_allocator": 1024,
+    "remaining_ram_before_allocator_and_stack": 430,
+    "files_sha256": {
+      "Eurotrack_V4_1.ino": "47a7f86ddfc260bf3a4ed4110f16d434189f7c581f92ee093aa456f03baa72ac",
+      "SettingsStore.h": "28fc7fa583a839f753c2ee971439880f949c537a27ca9ca47931f6d7ef7fb9fd",
+      "release/Eurotrack_V4_1.ino.hex": "7a8b63d6d970dee4425611e2e94aa37fc66ac12207166c1189477cb918b387bc"
+    }
+  },
+  "settings": {
+    "schema_written": 2,
+    "schemas_read": [
+      1,
+      2
+    ],
+    "record_bytes": 11,
+    "slots": [
+      32,
+      64
+    ],
+    "view_default": "BAR/BEAT",
+    "view_options": [
+      "BAR/BEAT",
+      "TIMER"
+    ]
+  },
+  "validation": {
+    "avr_compile": "pass",
+    "host_asan_ubsan": "pass",
+    "v40_migration_power_cuts": "pass",
+    "view_persistence": "pass",
+    "visual_only_switch": "pass",
+    "ui_frames_inspected": 17,
+    "hardware_tested": false,
+    "uploaded": false
+  }
+}
