@@ -4,13 +4,13 @@
   "version": "4.1",
   "files": {
     ".gitignore": "223aae507a20c615b786bcd0193836a3c79eb175838839ed55d11bf82c4653a7",
-    "CONTRIBUTING.md": "d4aef8dd78cf8174535b4ccb16d7953bc6b96e780b83b81d8194932883b8be09",
+    "CONTRIBUTING.md": "7532185b20cb8010ae9e5c01d957f64567af09fd2314fa3400997c6a6828595e",
     "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
     "NOTICE.md": "425eb98dd10ee076eecfb616b020cb77acd849c110ed7d1e5605986a934f8167",
-    "README.md": "9ac2c603f2b671b199fc601b9e85cd95610377a8743066601380ed06a206a021",
-    "docs/DEVELOPMENT.md": "7c51ef07bad9ed2e43750fd7b7a8c4e0a32c3d83aa939490e258eb1b914541a0",
-    "docs/GUIDA_IT.md": "428a20c42b297a9dd345080d6b767415b0707a19c386d793a1d82410a3b321d3",
-    "docs/PUBLICATION_CHECKS.md": "5ea1bb4c60ab75ec9f9c48f765b7254410e7dfe64e927428c10a19aeb8ea6c2e",
+    "README.md": "6b834c1f1f77fe9d176ed155482a26ae8bd8666861c157e673912d489887af87",
+    "docs/DEVELOPMENT.md": "39c247ff3b19de4c379097f2efe17aa5f29d8f4d820cc1866b8fcc75be27ed41",
+    "docs/GUIDA_IT.md": "ed8a5c53a59275ecaf19fb8aca9429b094ca5dd9d045f32717db8b6fbb39aa63",
+    "docs/PUBLICATION_CHECKS.md": "99b4de12e1e09af6b38591de6e74dcf7863a97412ddda414db79e5bd5501193b",
     "docs/USER_GUIDE.md": "39bb4e099e7b02638c96d8418db3a27ad651700659f57f4567eb41cc025d9ee8",
     "firmware/Eurotrack_V4_1/Eurotrack_V4_1.ino": "47a7f86ddfc260bf3a4ed4110f16d434189f7c581f92ee093aa456f03baa72ac",
     "firmware/Eurotrack_V4_1/README.md": "9a8ffbec1fd9e84936cb214356ce391d9928b0eca8603539d8b077b6a71f0d90",
@@ -39,12 +39,15 @@
     "firmware/Eurotrack_V4_1_SingleFile/release/Eurotrack_V4_1_SingleFile.ino.hex": "7a8b63d6d970dee4425611e2e94aa37fc66ac12207166c1189477cb918b387bc",
     "firmware/Eurotrack_V4_1_SingleFile/release/SHA256SUMS.txt": "bc5497c53bd632f265f13c765c83d7b172b9b2a5bc2f10f142ed07f8e811c714",
     "firmware/Eurotrack_V4_1_SingleFile/release/build_manifest.json": "971e2b97c870ea3025490b2b942dca890ff6c4d3d1ba4f580cf2f62d24bd866a",
-    "hardware/schematics/README.md": "8fc02358b255ba45c4c5f9c9e43103f78740e7734c74b4f31f1ac296427db4dc",
+    "hardware/schematics/README.md": "a7437562465f7de30c6bb76801efa997461df67174cc85f1bc7f3f775ad283e5",
     "tools/test_host.sh": "79ceaf54be5d80d5a116a1e5637b5351586bf2fbebe863d2d673362c3a308172",
     "PHOTO_EDIT_NOTES.md": "934b5471205a90104b5ce10014fb630e0dcded5dc8379206bace3059399667c9",
     "images/euroTrack_side_IMG_3256_clean.png": "9c449842b8e405148dbf1c9dea114e22a3fd2e4c04f39c9795a0a5e82d40f5b0",
     "images/euroTrack_angled_IMG_3257_clean.png": "39b873bab45331145b9d167e5376daf5bb4bd723ddfd5ca83d6d4ec8e744f4cb",
-    "images/euroTrack_front_IMG_3255_clean.png": "941de036bd967b7ed90a90f0bc601872c07582120cbcace951889cb54e8c74de"
+    "images/euroTrack_front_IMG_3255_clean.png": "941de036bd967b7ed90a90f0bc601872c07582120cbcace951889cb54e8c74de",
+    "hardware/schematics/Schematic_euroTrack_2026-10-28.pdf": "4981d1e7e76abd29f6dc7fbe5fd3d29aa16f79d80d44f1fe591ffe14fe6bb23a",
+    "hardware/schematics/SHA256SUMS.txt": "fed2e840e9ebe3d01aee1d9cd7b8061fd470c65c1ea669521eb8336021a7f31d"
   },
-  "photo_update_date": "2026-10-28"
+  "photo_update_date": "2026-10-28",
+  "schematic_update_date": "2026-10-28"
 }

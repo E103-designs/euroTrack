@@ -52,9 +52,9 @@ The published source is an **engineering candidate**, not a newly hardware-quali
 - `firmware/`: complete editable single-file and modular V4.1 sources, manuals, manifests, test adapters and software-rendered OLED examples.
 - `docs/`: English/Italian operation guides and reproducible build/development instructions.
 - `images/`: three retouched listing photographs based on the supplied product photos.
-- `hardware/schematics/`: reserved for the maintainer's corrected schematic PDFs and editable CAD.
+- `hardware/schematics/`: updated schematic PDF supplied on 28 October 2026, revision notes and file checksum; editable native CAD remains to be added.
 
-**Corrected schematics and a revision-matched editable hardware release are pending upload.** Older local BOM/Gerber dates differ and are not presented here as a verified manufacturing package. Safe jack voltage limits, power/USB arrangements, output buffering and PCB-to-firmware pin correspondence must be checked against that hardware release. Timing and pulse widths are software targets; CLKOUT is not a zero-latency hardware buffer.
+**The updated schematic PDF supplied on 28 October 2026 is now available in [hardware/schematics](hardware/schematics/README.md).** Editable native CAD and a revision-matched manufacturing package remain to be added. Older local BOM/Gerber dates differ and are not presented here as a verified manufacturing package. Safe jack voltage limits, power/USB arrangements, output buffering and PCB-to-firmware pin correspondence must be checked against that hardware release. Timing and pulse widths are software targets; CLKOUT is not a zero-latency hardware buffer.
 
 ## Make it yours
 
