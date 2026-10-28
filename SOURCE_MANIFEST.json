@@ -7,7 +7,7 @@
     "CONTRIBUTING.md": "d4aef8dd78cf8174535b4ccb16d7953bc6b96e780b83b81d8194932883b8be09",
     "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
     "NOTICE.md": "425eb98dd10ee076eecfb616b020cb77acd849c110ed7d1e5605986a934f8167",
-    "README.md": "c78396f75c69b506bd239d3d9a09ad1dd34aaef4975dc84b78de1c614058f097",
+    "README.md": "9ac2c603f2b671b199fc601b9e85cd95610377a8743066601380ed06a206a021",
     "docs/DEVELOPMENT.md": "7c51ef07bad9ed2e43750fd7b7a8c4e0a32c3d83aa939490e258eb1b914541a0",
     "docs/GUIDA_IT.md": "428a20c42b297a9dd345080d6b767415b0707a19c386d793a1d82410a3b321d3",
     "docs/PUBLICATION_CHECKS.md": "5ea1bb4c60ab75ec9f9c48f765b7254410e7dfe64e927428c10a19aeb8ea6c2e",
@@ -40,10 +40,11 @@
     "firmware/Eurotrack_V4_1_SingleFile/release/SHA256SUMS.txt": "bc5497c53bd632f265f13c765c83d7b172b9b2a5bc2f10f142ed07f8e811c714",
     "firmware/Eurotrack_V4_1_SingleFile/release/build_manifest.json": "971e2b97c870ea3025490b2b942dca890ff6c4d3d1ba4f580cf2f62d24bd866a",
     "hardware/schematics/README.md": "8fc02358b255ba45c4c5f9c9e43103f78740e7734c74b4f31f1ac296427db4dc",
-    "images/angled.jpg": "03e42c42bf5c5b0a5dee3a6872f5e72ebe9b66893ce957e3c9a79ba65a9a7e88",
-    "images/back.jpg": "f1388209e2a4b0780f42661d38a81bf2278676392aa0b48e649d14a89ff48bc5",
-    "images/front.jpg": "1134102147a411ec027dc07451af3a9e055c03c74ac1b1b76d1e2c6f1861bbea",
-    "images/side.jpg": "34e23db60aa02f03f89479cda658bcdab157480070a39b6aaa11696c1cc14259",
-    "tools/test_host.sh": "79ceaf54be5d80d5a116a1e5637b5351586bf2fbebe863d2d673362c3a308172"
-  }
+    "tools/test_host.sh": "79ceaf54be5d80d5a116a1e5637b5351586bf2fbebe863d2d673362c3a308172",
+    "PHOTO_EDIT_NOTES.md": "934b5471205a90104b5ce10014fb630e0dcded5dc8379206bace3059399667c9",
+    "images/euroTrack_side_IMG_3256_clean.png": "9c449842b8e405148dbf1c9dea114e22a3fd2e4c04f39c9795a0a5e82d40f5b0",
+    "images/euroTrack_angled_IMG_3257_clean.png": "39b873bab45331145b9d167e5376daf5bb4bd723ddfd5ca83d6d4ec8e744f4cb",
+    "images/euroTrack_front_IMG_3255_clean.png": "941de036bd967b7ed90a90f0bc601872c07582120cbcace951889cb54e8c74de"
+  },
+  "photo_update_date": "2026-10-28"
 }

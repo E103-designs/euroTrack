@@ -4,7 +4,13 @@
 
 **An open-source Eurorack bar/beat counter, performance timer and clock utility.** Follow the musical position of an external clock, mark longer phrases, or run from the internal tempo — with a selectable **BAR/BEAT** or **TIMER** display.
 
-<p align="center"><img src="images/front.jpg" height="500" alt="euroTrack actual assembled front panel"> <img src="images/angled.jpg" height="500" alt="euroTrack actual assembled module at an angle"></p>
+<p align="center"><img src="images/euroTrack_front_IMG_3255_clean.png" height="500" alt="euroTrack — front, retouched product photograph"> <img src="images/euroTrack_angled_IMG_3257_clean.png" height="500" alt="euroTrack — angled, retouched product photograph"></p>
+
+<details><summary>More product views</summary>
+<p align="center"><img src="images/euroTrack_side_IMG_3256_clean.png" height="360" alt="euroTrack — side, retouched product photograph"></p>
+</details>
+
+<sub>Product photographs retouched with AI for background and lighting. [Photo notes](PHOTO_EDIT_NOTES.md).</sub>
 
 [Quick start and controls](docs/USER_GUIDE.md) · [Guida italiana](docs/GUIDA_IT.md) · [Firmware](firmware/Eurotrack_V4_1_SingleFile/Eurotrack_V4_1_SingleFile.ino) · [Build and modify](docs/DEVELOPMENT.md) · [Schematics](hardware/schematics/README.md)
 
@@ -45,7 +51,7 @@ The published source is an **engineering candidate**, not a newly hardware-quali
 
 - `firmware/`: complete editable single-file and modular V4.1 sources, manuals, manifests, test adapters and software-rendered OLED examples.
 - `docs/`: English/Italian operation guides and reproducible build/development instructions.
-- `images/`: the four supplied photographs of the actual assembled product.
+- `images/`: three retouched listing photographs based on the supplied product photos.
 - `hardware/schematics/`: reserved for the maintainer's corrected schematic PDFs and editable CAD.
 
 **Corrected schematics and a revision-matched editable hardware release are pending upload.** Older local BOM/Gerber dates differ and are not presented here as a verified manufacturing package. Safe jack voltage limits, power/USB arrangements, output buffering and PCB-to-firmware pin correspondence must be checked against that hardware release. Timing and pulse widths are software targets; CLKOUT is not a zero-latency hardware buffer.
@@ -58,6 +64,3 @@ Original project materials: **GNU GPL-3.0**. [License](LICENSE) · [Notice](NOTI
 
 Other E103 projects: [faun](https://github.com/E103-designs/faun) · [ALTERIA](https://github.com/E103-designs/ALTERIA) · [SINCRIA](https://github.com/E103-designs/SINCRIA).
 
-<details><summary>Rear and side photographs</summary>
-<p><img src="images/back.jpg" height="450" alt="euroTrack rear PCB and Nano"> <img src="images/side.jpg" height="450" alt="euroTrack side profile"></p>
-</details>
