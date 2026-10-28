@@ -56,7 +56,7 @@ Meter values in PROGMEM are copied into `meter` before use. When adding meters u
 | TIMER button | D7 | INPUT, active HIGH, external pulldown assumed |
 | OLED SDA / SCL | A4 / A5 | I2C, configured 400 kHz |
 
-`TIMER_BUTTON_USES_PULLUP` is **0** to preserve the supplied wiring. Setting it to 1 also changes the expected switch wiring toward GND. A firmware pin table does not validate PCB traces, input conditioning or safe jack levels. Use the corrected hardware schematic when uploaded.
+`TIMER_BUTTON_USES_PULLUP` is **0** to preserve the supplied wiring. Setting it to 1 also changes the expected switch wiring toward GND. A firmware pin table does not validate PCB traces, input conditioning or safe jack levels. Use the [updated schematic PDF](../hardware/schematics/README.md) supplied on 28 October 2026 and confirm correspondence with the assembled PCB.
 
 ## Memory and timing constraints
 

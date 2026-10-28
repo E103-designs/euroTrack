@@ -33,4 +33,4 @@ Per l'installazione piu semplice usare [Eurotrack_V4_1_SingleFile.ino](../firmwa
 
 Target: Nano classico ATmega328P a 16 MHz; OLED SSD1306 I2C 128×64 a 0x3C. Dipendenze e comandi nella [guida di sviluppo](DEVELOPMENT.md); [manuale tecnico italiano originale](../firmware/Eurotrack_V4_1/README.md) e [rapporto di verifica](../firmware/Eurotrack_V4_1/VALIDATION.md) inclusi.
 
-Gli schematici corretti e i sorgenti CAD vanno aggiunti in [hardware/schematics](../hardware/schematics/README.md). Non sono stati pubblicati vecchi BOM/Gerber come pacchetto hardware gia verificato. Range sicuri dei jack, alimentazione, corrispondenza PCB/pin, jitter e margine dello stack richiedono verifica sul modulo reale.
+Lo schematico PDF aggiornato fornito il 28 ottobre 2026 e disponibile in [hardware/schematics](../hardware/schematics/README.md); i sorgenti CAD modificabili restano da aggiungere. Non sono stati pubblicati vecchi BOM/Gerber come pacchetto hardware gia verificato. Range sicuri dei jack, alimentazione, corrispondenza PCB/pin, jitter e margine dello stack richiedono verifica sul modulo reale.

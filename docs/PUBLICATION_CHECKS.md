@@ -26,3 +26,7 @@ The SingleFile source is copied from the versioned ZIP and matches its original 
 The four supplied photos show the actual assembled product. Published OLED previews come from software rendering, not a physical display photograph. No current schematic, native CAD or revision-matched manufacturing package was promoted from old assets.
 
 No firmware was uploaded to a physical module, and no new electrical/timing/stack measurements were performed. The detailed inherited report in `firmware/Eurotrack_V4_1/VALIDATION.md` lists the remaining bench tests.
+
+## Schematic publication update - 28 October 2026
+
+The updated maintainer-supplied schematic PDF is now in [hardware/schematics](../hardware/schematics/README.md). The original bytes and title blocks were preserved; all pages were opened and rendered for readability. Native CAD and a matching manufacturing package remain pending. Firmware and its recorded software test results were not changed; this upload does not claim new bench verification.
