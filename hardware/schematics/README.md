@@ -1,20 +1,25 @@
-# euroTrack — corrected schematics / schematici aggiornati
+# euroTrack - schematics / schematici
 
-**Awaiting maintainer upload.** No current, corrected schematic or editable CAD project is included here yet.
+**Updated schematic PDF supplied by the maintainer and published on 28 October 2026.**
 
-The available local BOM dates from 16 June 2026; front/back Gerbers have later dates (30 September / 5 October). Their electrical equivalence has not been established. They are not published as an automatically approved manufacturing package.
+[Open or download the schematic PDF](Schematic_euroTrack_2026-10-28.pdf)
 
-## Add the corrected hardware release
-
-1. Upload a readable PDF named `euroTrack_SCHEMATIC_REV-x.y_YYYY-MM-DD.pdf`.
-2. Add the editable native CAD project and required symbols/footprints under `source/`, with CAD tool/version. PDF/Gerber files alone are not the preferred source for modifying a design.
-3. Record board revision, MCU, date, matching BOM/Gerbers and errata. Check connector numbering, power polarity, switch wiring, display interface and all jack conditioning against the assembled board.
-4. Update the table and root README only after the files are present and reviewed. Tag the matching hardware revision.
-
-| Revision | Schematic PDF | Editable CAD | Matching PCB/BOM | Verification |
+| File baseline | Pages | Export/publication date | Editable CAD | Matching PCB/BOM/Gerbers |
 | --- | --- | --- | --- | --- |
-| Pending | Not uploaded | Not uploaded | To be matched | Awaiting maintainer |
+| No board revision in filename | 1 | 2026-10-28 | Awaiting source files | Not included in this upload |
+
+## Revision identification
+
+The original filename and PDF bytes are preserved. The date in the filename is the export/publication date; it does not replace a design revision or the dates printed inside the drawing.
+
+Original title block(s): Sheet_1, REV 1.0, date 2025-08-20.
+
+Integrity: [SHA-256 checksums](SHA256SUMS.txt). The PDF was opened, its 1 page(s) rendered and the uploaded bytes checked against the supplied file. Publication does not add a new electrical review, firmware compatibility test or bench validation.
+
+## Editable hardware sources
+
+Add the native CAD project and its custom symbols/footprints under `source/` when available, with the PCB revision, matching BOM/Gerbers and known errata. The PDF supports reading the circuit; native CAD is still needed to modify the original design directly.
 
 ## Italiano
 
-Carica qui gli schematici corretti piu recenti, insieme ai sorgenti CAD modificabili e alla distinta/Gerber della stessa revisione. La tabella pin nel firmware e la foto del modulo non sostituiscono la verifica elettrica della PCB, dei livelli sicuri ai jack o dell'alimentazione.
+Lo schematico aggiornato fornito dal maintainer e disponibile nel PDF qui sopra. Nome e contenuto originali sono conservati. I cartigli mantengono le proprie date e revisioni; il 28 ottobre 2026 identifica questa esportazione/pubblicazione. Sorgenti CAD modificabili e pacchetto di produzione della stessa revisione restano da aggiungere.
