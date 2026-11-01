@@ -1,6 +1,6 @@
 # euroTrack V4.1 — guida rapida
 
-Modulo Eurorack per seguire battute, beat e durata della performance. La V4.1 del 20 ottobre 2026 e il firmware locale piu recente trovato; e un candidato compilato e verificato via software, con collaudo elettrico e temporale ancora da completare.
+Modulo Eurorack per seguire battute, beat e durata della performance. La V4.1 del 20 ottobre 2026; e un candidato compilato e verificato via software, con collaudo elettrico e temporale ancora da completare.
 
 ## Primo utilizzo
 
@@ -33,4 +33,4 @@ Per l'installazione piu semplice usare [Eurotrack_V4_1_SingleFile.ino](../firmwa
 
 Target: Nano classico ATmega328P a 16 MHz; OLED SSD1306 I2C 128×64 a 0x3C. Dipendenze e comandi nella [guida di sviluppo](DEVELOPMENT.md); [manuale tecnico italiano originale](../firmware/Eurotrack_V4_1/README.md) e [rapporto di verifica](../firmware/Eurotrack_V4_1/VALIDATION.md) inclusi.
 
-Lo schematico PDF aggiornato fornito il 28 ottobre 2026 e disponibile in [hardware/schematics](../hardware/schematics/README.md); i sorgenti CAD modificabili restano da aggiungere. Non sono stati pubblicati vecchi BOM/Gerber come pacchetto hardware gia verificato. Range sicuri dei jack, alimentazione, corrispondenza PCB/pin, jitter e margine dello stack richiedono verifica sul modulo reale.
+Lo schematico PDF e disponibile in [hardware/schematics](../hardware/schematics/README.md); i sorgenti CAD modificabili restano da aggiungere. Sorgenti CAD e pacchetto di produzione della stessa revisione restano da aggiungere. Range sicuri dei jack, alimentazione, corrispondenza PCB/pin, jitter e margine dello stack richiedono verifica sul modulo reale.
