@@ -4,13 +4,12 @@
 
 **An open-source Eurorack bar/beat counter, performance timer and clock utility.** Follow the musical position of an external clock, mark longer phrases, or run from the internal tempo — with a selectable **BAR/BEAT** or **TIMER** display.
 
-<p align="center"><img src="images/euroTrack_front_IMG_3255_clean.png" height="500" alt="euroTrack — front, retouched product photograph"> <img src="images/euroTrack_angled_IMG_3257_clean.png" height="500" alt="euroTrack — angled, retouched product photograph"></p>
+<p align="center"><img src="images/front.png" height="500" alt="euroTrack front view"> <img src="images/angled.png" height="500" alt="euroTrack product view"></p>
 
 <details><summary>More product views</summary>
-<p align="center"><img src="images/euroTrack_side_IMG_3256_clean.png" height="360" alt="euroTrack — side, retouched product photograph"></p>
+<p align="center"><img src="images/side.png" height="360" alt="euroTrack product view"></p>
 </details>
 
-<sub>Product photographs retouched with AI for background and lighting. [Photo notes](PHOTO_EDIT_NOTES.md).</sub>
 
 [Quick start and controls](docs/USER_GUIDE.md) · [Guida italiana](docs/GUIDA_IT.md) · [Firmware](firmware/Eurotrack_V4_1_SingleFile/Eurotrack_V4_1_SingleFile.ino) · [Build and modify](docs/DEVELOPMENT.md) · [Schematics](hardware/schematics/README.md)
 
@@ -40,21 +39,21 @@ Baseline dated **20 October 2026**, for **classic Arduino Nano ATmega328P, 16 MH
 
 | Distribution | Open in Arduino IDE | Purpose |
 | --- | --- | --- |
-| **Single file — recommended for installation** | [Eurotrack_V4_1_SingleFile.ino](firmware/Eurotrack_V4_1_SingleFile/Eurotrack_V4_1_SingleFile.ino) | Complete sketch with the settings class embedded; no missing local header |
+| **Single file — recommended for installation** | [Eurotrack_V4_1_SingleFile.ino](firmware/Eurotrack_V4_1_SingleFile/Eurotrack_V4_1_SingleFile.ino) | Complete sketch with the settings class embedded |
 | **Modular source** | [Eurotrack_V4_1.ino](firmware/Eurotrack_V4_1/Eurotrack_V4_1.ino), with [SettingsStore.h](firmware/Eurotrack_V4_1/SettingsStore.h) beside it | Easier to inspect and modify persistence; includes the regression suite |
 
 Both forms implement the same V4.1 behavior and EEPROM format. Open **one sketch at a time**, inside its matching folder; do not put both `.ino` files in one sketch. Download with **Code → Download ZIP**, extract, and install the pinned dependencies in the [development guide](docs/DEVELOPMENT.md).
 
-The published source is an **engineering candidate**, not a newly hardware-qualified release. The recorded build is 20,066 bytes flash and 594 bytes static SRAM, plus a **1,024-byte OLED heap buffer** and allocator overhead: only about 430 bytes remain before stack/allocator overhead. [Validation](firmware/Eurotrack_V4_1/VALIDATION.md) and [publication checks](docs/PUBLICATION_CHECKS.md) distinguish compilation and software tests from bench measurements.
+**V4.1 is an engineering release with hardware qualification pending.** The recorded build is 20,066 bytes flash and 594 bytes static SRAM, plus a **1,024-byte OLED heap buffer** and allocator overhead: only about 430 bytes remain before stack/allocator overhead. [Validation](firmware/Eurotrack_V4_1/VALIDATION.md) and [validation results](docs/PUBLICATION_CHECKS.md) distinguish compilation and software tests from bench measurements.
 
 ## What is in the repository
 
 - `firmware/`: complete editable single-file and modular V4.1 sources, manuals, manifests, test adapters and software-rendered OLED examples.
 - `docs/`: English/Italian operation guides and reproducible build/development instructions.
-- `images/`: three retouched listing photographs based on the supplied product photos.
-- `hardware/schematics/`: updated schematic PDF supplied on 28 October 2026, revision notes and file checksum; editable native CAD remains to be added.
+- `images/`: product photographs.
+- `hardware/schematics/`: circuit schematic, revision information and SHA-256 checksum; editable native CAD remains to be added.
 
-**The updated schematic PDF supplied on 28 October 2026 is now available in [hardware/schematics](hardware/schematics/README.md).** Editable native CAD and a revision-matched manufacturing package remain to be added. Older local BOM/Gerber dates differ and are not presented here as a verified manufacturing package. Safe jack voltage limits, power/USB arrangements, output buffering and PCB-to-firmware pin correspondence must be checked against that hardware release. Timing and pulse widths are software targets; CLKOUT is not a zero-latency hardware buffer.
+**The circuit schematic is available in [hardware/schematics](hardware/schematics/README.md).** Editable native CAD and a revision-matched manufacturing package remain to be added. Safe jack voltage limits, power/USB arrangements, output buffering and PCB-to-firmware pin correspondence must be checked against that hardware release. Timing and pulse widths are software targets; CLKOUT is not a zero-latency hardware buffer.
 
 ## Make it yours
 
