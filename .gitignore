@@ -4,3 +4,5 @@ build/
 node_modules/
 *.elf
 *.o
+*.pgm
+__pycache__/

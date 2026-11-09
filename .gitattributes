@@ -1,0 +1,2 @@
+# Preserve generated application HEX byte for byte, including line endings.
+*.hex binary
