@@ -18,3 +18,6 @@ PYTEST
   "$CXX" -std=c++17 -Wall -Wextra -Wno-unused-parameter -fsanitize=address,undefined -DARDUINO=10819 -DEUROTRACK_HOST_TEST -I"$ROOT/firmware/Eurotrack_V4_1/tests/stubs" -I"$GFX_DIR" "$TEST_ROOT/firmware_tests.cpp" "$GFX_DIR/Adafruit_GFX.cpp" -o "$TEST_ROOT/$FORM-test"
   (cd "$TEST_ROOT" && "./$FORM-test")
 done
+
+# Current V4.2 includes its own single-file regression suite.
+GFX_DIR="$GFX_DIR" CXX="$CXX" sh "$ROOT/firmware/Eurotrack_V4_2_SingleFile/tests/run_tests.sh"
