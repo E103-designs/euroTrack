@@ -1,36 +1,53 @@
-# euroTrack V4.1 — guida rapida
+# euroTrack V4.2 — guida rapida
 
-Modulo Eurorack per seguire battute, beat e durata della performance. La V4.1 del 20 ottobre 2026; e un candidato compilato e verificato via software, con collaudo elettrico e temporale ancora da completare.
+[Apri il firmware .ino](../firmware/Eurotrack_V4_2_SingleFile/Eurotrack_V4_2_SingleFile.ino) · [Manuale italiano completo](../firmware/Eurotrack_V4_2_SingleFile/README.md) · [Esempi del display](DISPLAY.md)
 
-## Primo utilizzo
+V4.2 dell'8 novembre 2026, per Nano classico ATmega328P a 16 MHz e SSD1306 I2C 128×64. Compilazione e test software superati; collaudo sul circuito reale ancora da completare.
 
-1. Collegare a CLKIN un clock compatibile a **4 PPQN**: un impulso per sedicesimo. A 120 BPM corrispondono 8 impulsi al secondo.
-2. Il primo clock valido indica battuta 1 / beat 1 e genera il marker MEAS. L'uscita torna a generarlo ogni 1, 2, 4, 8 o 16 battute secondo il menu.
-3. **T.S.** apre la selezione del metro; i clic successivi scorrono 4/4, 3/4, 6/8, 5/4, 7/8, 9/8 e 12/8. Dopo tre secondi la selezione si chiude. In 6/8 sono mostrati due gruppi di tre ottavi; in 7/8 tre gruppi 2+2+3.
-4. **TIMER breve** avvia, mette in pausa o riprende. Tenuto circa un secondo ferma e azzera il tempo. Con TIME+BAR vengono riallineate anche le battute nelle azioni previste.
-5. Tenere **T.S. e TIMER insieme per un secondo**, poi rilasciarli entrambi per il menu. T.S. sceglie la voce; TIMER modifica il valore.
+## Clock e pulsanti
 
-## Otto voci di menu
+CLKIN richiede **4 PPQN**, un impulso per sedicesimo: a 120 BPM sono 8 impulsi al secondo. T.S. apre la selezione del metro; i clic successivi scorrono 4/4, 3/4, 6/8, 5/4, 7/8, 9/8 e 12/8. I beat mostrati sono gruppi: 6/8 è 3+3 ottavi; 7/8 è 2+2+3. La selezione si chiude dopo 3 secondi.
 
-1. MEASURE OUTPUT EVERY: marker ogni 1/2/4/8/16 battute.
-2. INTERNAL CLOCK: ON/OFF; torna sempre OFF all'accensione. Per funzionare deve essere ON e il timer deve essere RUN.
-3. INTERNAL TEMPO: 50–250 BPM a passi di 5; default 120.
-4. MEASURE PULSE LENGTH: durata richiesta 5/10/20/50 ms.
-5. RESET INPUT RESETS: solo BAR oppure BAR+TIME. L'azione avviene al clock successivo; BAR+TIME ferma e azzera anche il timer.
-6. TIMER BUTTON CONTROLS: TIME oppure TIME+BAR.
-7. DISPLAY VIEW: BAR/BEAT oppure TIMER. Cambia solo la vista, senza azzerare o mettere in pausa.
-8. STORE SETTINGS: TIMER salva/esce.
+Nelle modalità BAR e BAR+TIME, TIMER breve avvia/pausa/riprende, mentre una pressione di circa un secondo ferma e azzera. Con clock esterno, la pausa del solo cronometro non ferma il conteggio. BAR+TIME applica al clock successivo il reset della posizione e lo stop/azzeramento del timer.
 
-Le impostazioni persistenti si salvano automaticamente dopo un secondo dall'ultima modifica: SAVE/EXIT non annulla i cambiamenti gia fatti. Attendere che `*` scompaia prima di spegnere. Il clock interno abilitato non viene salvato; il BPM impostato si.
+## Slave da RESET IN
 
-## Clock e reset
+Seleziona **RESET INPUT MODE → RUN GATE**, voce 5/10:
 
-Il clock esterno e prioritario e continua a far avanzare le battute anche quando il timer e fermo/in pausa. Dopo 1500 ms senza fronti validi, viene segnalato NO CLK oppure riparte l'interno se abilitato e timer RUN. La ripartenza interna e immediata, senza previsione della fase esterna. CLKOUT replica i fronti esterni via software: non e un buffer a latenza nulla e non elimina i disturbi elettrici.
+- HIGH avvia una nuova performance da zero e riallinea BAR/BEAT a 1/1 e il pattern MEAS al primo passo.
+- Il primo CLOCK successivo è il primo sedicesimo; il timer misura invece dal fronte RUN.
+- LOW ferma timer, conteggio e MEAS. La durata raggiunta resta visibile e compare STOP.
+- Il successivo HIGH riparte da zero, senza riprendere la durata precedente.
 
-## Installare o modificare
+L'ingresso già HIGH all'avvio o alla selezione della modalità viene riconosciuto. Il pulsante TIMER continua a operare nel menu, ma fuori dal menu il trasporto appartiene al jack. CLKOUT resta la copia del clock esterno anche a RUN LOW.
 
-Per l'installazione piu semplice usare [Eurotrack_V4_1_SingleFile.ino](../firmware/Eurotrack_V4_1_SingleFile/Eurotrack_V4_1_SingleFile.ino) nella propria cartella omonima. Per lo sviluppo e disponibile la [versione modulare](../firmware/Eurotrack_V4_1/Eurotrack_V4_1.ino), che richiede SettingsStore.h nella stessa cartella. Non unire i due sketch.
+## Dieci voci di menu
 
-Target: Nano classico ATmega328P a 16 MHz; OLED SSD1306 I2C 128×64 a 0x3C. Dipendenze e comandi nella [guida di sviluppo](DEVELOPMENT.md); [manuale tecnico italiano originale](../firmware/Eurotrack_V4_1/README.md) e [rapporto di verifica](../firmware/Eurotrack_V4_1/VALIDATION.md) inclusi.
+Tenere T.S. e TIMER insieme per 1 secondo e rilasciarli entrambi. T.S. sceglie la voce; TIMER cambia il valore.
 
-Lo schematico PDF e disponibile in [hardware/schematics](../hardware/schematics/README.md); i sorgenti CAD modificabili restano da aggiungere. Sorgenti CAD e pacchetto di produzione della stessa revisione restano da aggiungere. Range sicuri dei jack, alimentazione, corrispondenza PCB/pin, jitter e margine dello stack richiedono verifica sul modulo reale.
+| Voce | Funzione |
+| ---: | --- |
+| 1/10 | MEASURE OUTPUT EVERY: 1/2/4/8/16 battute, solo in MEASURE |
+| 2/10 | INTERNAL CLOCK: ON/OFF; torna OFF all'accensione |
+| 3/10 | INTERNAL TEMPO: 50–250 BPM a passi di 5 |
+| 4/10 | OUTPUT PULSE LENGTH: 5/10/20/50 ms, con limite per preservare LOW nei clock/preset |
+| 5/10 | RESET INPUT MODE: BAR, BAR+TIME, RUN GATE |
+| 6/10 | TIMER BUTTON CONTROLS: TIME o TIME+BAR; superato da RUN GATE |
+| 7/10 | DISPLAY VIEW: BAR/BEAT oppure TIMER |
+| 8/10 | MEAS OUTPUT MODE: MEASURE, CLOCK, SWING, SAMBA, BOSSA, SON 3-2, TRESILLO |
+| 9/10 | CLOCK SWING: 50/55/60/65/70/75%, solo in SWING |
+| 10/10 | STORE SETTINGS: TIMER salva/esce |
+
+Le impostazioni si salvano automaticamente un secondo dopo l'ultima modifica. Attendere che `*` scompaia prima di spegnere. CLOCK è dritto a sedicesimi; SWING ritarda il secondo sedicesimo di ciascuna coppia. A 120 BPM, 60% alterna 150/100 ms. I preset sono una sola voce di trigger, con cicli fissi di 16 o 32 passi: [sequenze esatte nel manuale](../firmware/Eurotrack_V4_2_SingleFile/README.md#nuove-funzioni-di-meas-out).
+
+## Due viste, tutti gli elementi
+
+![Viste BAR/BEAT e TIMER](display/views-comparison.png)
+
+Sono rendering software del firmware, non fotografie del display fisico. Entrambe mostrano tempo, stato, sorgente/BPM, metro, battuta, beat e fascia ritmica. Cambiano dimensioni e disposizione; la scelta viene conservata dopo lo spegnimento.
+
+## Installazione e verifica
+
+Aprire il singolo `.ino` nella cartella omonima; non serve SettingsStore.h. Non unire più sketch completi. Nel Cloud Editor è possibile sostituire il contenuto dello sketch già configurato, oppure selezionare esplicitamente Adafruit BusIO 1.17.4 nel nuovo sketch se viene scelta EIS.
+
+La V4.2 migra i record V4.0/V4.1 allo schema 3 senza riscrivere i byte V3.9. Non cancellare l'EEPROM se si vuole migrare. Restano da misurare jitter, livelli dei jack, comportamento durante interruzioni di alimentazione e margine dello stack: [rapporto di verifica](../firmware/Eurotrack_V4_2_SingleFile/VALIDATION.md).
