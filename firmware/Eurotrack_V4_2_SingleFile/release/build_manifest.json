@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-08",
+  "version": "4.2",
+  "status": "engineering_candidate_not_hardware_qualified",
+  "fqbn": "arduino:avr:nano:cpu=atmega328",
+  "clock_ppqn": 4,
+  "tools": {
+    "arduino_cli": "1.5.1",
+    "avr_core": "1.8.6",
+    "avr_gcc": "7.3.0-atmel3.6.1-arduino7"
+  },
+  "libraries": {
+    "Adafruit SSD1306": "2.5.17",
+    "Adafruit GFX": "1.12.6",
+    "Adafruit BusIO": "1.17.4"
+  },
+  "memory": {
+    "flash_bytes": 22214,
+    "static_ram_bytes": 617,
+    "oled_heap_bytes_excluding_allocator": 1024,
+    "remaining_ram_before_allocator_and_stack": 407
+  },
+  "settings": {
+    "schema_written": 3,
+    "schemas_read": [
+      1,
+      2,
+      3
+    ],
+    "record_bytes": 11,
+    "slots": [
+      32,
+      64
+    ],
+    "reset_modes": [
+      "BAR",
+      "BAR+TIME",
+      "RUN GATE"
+    ],
+    "meas_modes": [
+      "MEASURE",
+      "CLOCK",
+      "SWING",
+      "SAMBA",
+      "BOSSA",
+      "SON 3-2",
+      "TRESILLO"
+    ],
+    "swing_percent": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75
+    ],
+    "new_defaults": {
+      "reset_mode": "BAR",
+      "meas_mode": "MEASURE",
+      "swing_percent": 60
+    }
+  },
+  "run_contract": {
+    "HIGH": "new performance, timer=0, bar/beat=1/1, pattern step=0",
+    "LOW": "freeze timer and position, silence MEAS, cancel pending output",
+    "boot_high": "start",
+    "timer_button_in_slave": "menu only"
+  },
+  "previous_source": {
+    "sha256": "4ac0285ad23afb2395a97b20e351d8c62a0c5bef1c6ea97978b5fba39858a4d9",
+    "modified": false,
+    "filename": "Eurotrack_V4_1_SingleFile.ino"
+  },
+  "validation": {
+    "avr_compile": "pass",
+    "host_asan_ubsan": "pass",
+    "schema_migration_power_cuts": "pass",
+    "meas_modes_and_swing_times": "pass",
+    "run_low_during_i2c": "pass",
+    "ui_frames_inspected": 24,
+    "hardware_tested": false,
+    "uploaded": false
+  },
+  "files_sha256": {
+    "Eurotrack_V4_2_SingleFile.ino": "6fcb604ba52963e3871f58acc355564db405c3f98532e49aace961b54a14f3cc",
+    "tests/firmware_tests.cpp": "e60c59d8ad90fcc4e72dd2cbeab42afe2ffcd5a9e64d86e1407f001f85681137",
+    "release/Eurotrack_V4_2_SingleFile.ino.hex": "68fb5a3bac775d0850bf0237b2bbeda3f046737743024f7be56cd8c1a61fcc31"
+  }
+}
